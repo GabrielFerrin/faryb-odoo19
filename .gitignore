@@ -1,14 +1,79 @@
-# Python
+# Python - Archivos byte-compilados y optimizados
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-*.egg-info/
-dist/
-build/
 
-# Odoo
+# Archivos de extensiones C
+*.so
+
+# Distribución y empaquetado
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+# Estos archivos se generan antes de crear el ejecutable
+*.manifest
+*.spec
+
+# Logs del instalador
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Pruebas unitarias y reportes de cobertura
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Configuración de entornos de desarrollo
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Caché de mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Proyectos Spyder y Rope
+.spyderproject
+.spyproject
+.ropeproject
+
+# Odoo - Archivos específicos
 *.pyc
 *.pyo
 *.log
@@ -18,13 +83,27 @@ build/
 *.pot~
 *.po~
 *.mo~
+*.session
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
+# Archivos de caché de Odoo
+.odoo_cache/
+
+# Archivos de configuración local de Odoo
+odoo.conf.local
+*.conf.local
+
+# Archivos de base de datos locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Archivos de migración temporales
+migrations/*.pyc
+migrations/__pycache__/
+
+# Archivos de documentación generados
+docs/_build/
+docs/.doctrees/
 
 # OS
 .DS_Store
@@ -33,5 +112,9 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.bak
+*.backup
 *.orig
 
+# Archivos de datos de prueba
+*.csv.bak
+*.xlsx.bak
